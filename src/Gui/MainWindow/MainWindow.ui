@@ -620,7 +620,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>SEND BBSCOIN</string>
+            <string>SEND cryptobid</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -894,7 +894,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>About BBSCoin</string>
+    <string>About cryptobid</string>
    </property>
   </action>
   <action name="m_aboutQtAction">
