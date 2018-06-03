@@ -29,7 +29,7 @@ if (WIN32)
   #    -DBoost_USE_STATIC_LIBS:BOOL=ON
   #    -DBoost_USE_STATIC_RUNTIME:BOOL=OFF)
   #include(ExternalProject)
-  #ExternalProject_Add(BBSCoin
+  #ExternalProject_Add(cryptobid
   #    SOURCE_DIR ${CMAKE_SOURCE_DIR}/bbscoin
   #    PREFIX ${CMAKE_CURRENT_BINARY_DIR}/BBSCoin
   #    CMAKE_ARGS 
@@ -388,7 +388,7 @@ endif()
 # Installation
 set(CPACK_PACKAGE_NAME ${CN_PROJECT_NAME})
 set(CPACK_PACKAGE_VERSION ${CN_VERSION})
-set(CPACK_PACKAGE_VENDOR "BBSCoin")
+set(CPACK_PACKAGE_VENDOR "cryptobid")
 set(CPACK_PACKAGE_CONTACT "https://www.bbscoin.xyz")
 set(CPACK_STRIP_FILES ON)
 if (APPLE)
@@ -413,7 +413,7 @@ elseif (UNIX)
         set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <dev@bbscoin.xyz>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "BBSCoin Wallet - A cryptocurrency for exchanging virtual credits from forums and websites")
+        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "cryptobid Wallet - A cryptocurrency for exchanging virtual credits from forums and websites")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}${CPACK_SYSTEM_NAME}")
     else()
         set(CPACK_GENERATOR RPM)
@@ -422,8 +422,8 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_LICENSE "MIT")
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
-        set(CPACK_RPM_PACKAGE_SUMMARY "BBSCoin Wallet")
-        set(CPACK_RPM_PACKAGE_DESCRIPTION "BBSCoin Wallet - A cryptocurrency for exchanging virtual credits from forums and websites")
+        set(CPACK_RPM_PACKAGE_SUMMARY "cryptobid Wallet")
+        set(CPACK_RPM_PACKAGE_DESCRIPTION "cryptobid Wallet - A cryptocurrency for exchanging virtual credits from forums and websites")
 set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}${CPACK_SYSTEM_NAME}")
     endif ()
 elseif (WIN32)
