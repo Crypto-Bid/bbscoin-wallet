@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=BBSCoin Wallet
-Comment=BBSCoin wallet
-Exec=bbscoinwallet %U
+Name=cryptobid Wallet
+Comment=cryptobid wallet
+Exec=cryptobidwallet %U
 Terminal=false
 Type=Application
 Icon=bbscoin
