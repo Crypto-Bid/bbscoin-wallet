@@ -33,7 +33,7 @@ namespace WalletGui {
 namespace {
 
 const int AUTO_CONNECTION_INTERVAL = 1000;
-const char OLD_CORE_LOG_FILE_NAME[] = "bbscoinwallet.log";
+const char OLD_CORE_LOG_FILE_NAME[] = "cryptobidwallet.log";
 
 }
 
@@ -107,7 +107,7 @@ bool CryptoNoteAdapter::isValidPaymentId(const QString& _paymentId) const {
 }
 
 QString CryptoNoteAdapter::getCurrencyTicker() const {
-  return "bbs";
+  return "cbid";
 }
 
 quint64 CryptoNoteAdapter::getMinimalFee() const {
