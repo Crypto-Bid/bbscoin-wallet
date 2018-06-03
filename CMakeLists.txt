@@ -79,11 +79,11 @@ if (WIN32)
   if(MSVC)
     add_definitions(/D_CRT_SECURE_NO_WARNINGS /D_WIN32_WINNT=0x0600)
     include_directories(
-        bbscoin/src/Platform/msc
-        bbscoin/src/Platform/Windows
+        cryptobid/src/Platform/msc
+        cryptobid/src/Platform/Windows
         Platform/Windows)
     set(BUILD_PLATFORM WIN32)
-    set(BUILD_RESOURCES src/bbscoinwallet.rc)
+    set(BUILD_RESOURCES src/cryptobidwallet.rc)
     set(Qt5_MAIN Qt5::WinMain)
   endif()
 
